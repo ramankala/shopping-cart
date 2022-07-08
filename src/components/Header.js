@@ -5,16 +5,16 @@ const Header = () => {
     return (
         <div className = 'header-ui'>
             <div>
-                <h1>ThorEats</h1>
+                ThorEats
             </div>
-            <div>
+            <div className = 'header-links'>
                 <ul>
                     <li>
-                        <h4>Home</h4>
+                        Home
                     </li>
 
                     <li>
-                        <h4>Shop</h4>
+                        Shop
                     </li>
 
                     <li>

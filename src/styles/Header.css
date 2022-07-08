@@ -2,6 +2,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
+    padding-left: 30px;
+    padding-right: 20px;
+    height: 80px;
+}
+.header-links{
+    display: flex;
+    font-size: 18px;
+}
+.header-ui:first-child{
+    font-size: 54px;
+    font-weight: 700;
 }
 ul{
     display: flex;

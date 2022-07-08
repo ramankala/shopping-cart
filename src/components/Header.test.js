@@ -9,23 +9,17 @@ describe("Header component", () => {
     });
 
     it('renders correct heading', () => {
-        screen.getByRole('heading', {
-            level: 1,
-            name: /thoreats/i,
-        });
+        screen.getByText(/thoreats/i);
     });
 
     it('displays home list item', () => {
-        screen.getByRole('heading', {
-            level: 4,
-            name: /home/i,
-        });
+        screen.getByText(/home/i);
     });
 
     it('displays shop list item', () => {
-        screen.getByRole('heading', {
-            level: 4,
-            name: /shop/i,
-        });
+        screen.getByText(/shop/i);
     });
+    it('renders shopping bag cart icon', () => {
+        screen.getByRole('img');
+    })
 });

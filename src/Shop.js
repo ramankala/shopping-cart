@@ -1,7 +1,8 @@
+import Header from './components/Header';
 const Shop = () => {
 
     return (
-        <div>
+        <div className='shopContainer'>
             sup
         </div>
     )
