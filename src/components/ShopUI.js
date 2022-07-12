@@ -12,12 +12,12 @@ const ShopUI = (props) => {
                 > 
 
                     <img 
-                    src = {item.imgUrl}
-                    alt = {item.fruit}
+                    src = {item.image}
+                    alt = {item.name}
                     />
 
-                    <div>{item.price}</div>
-                    <div>{item.fruit}</div>
+                    <div>200 rupees</div>
+                    <div>{item.name}</div>
                     
 
 
