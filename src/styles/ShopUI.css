@@ -1,0 +1,29 @@
+.container {
+    height: 800px;
+    width: auto;
+}
+.shopContainer{
+    border: blue 2px solid;
+    height: 100%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding-top: 20px;
+    flex: 1;
+}
+.foodCard{
+    border: red 2px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+}
+
+.foodCard > img {
+    width: 150px;
+    height: 150px;
+}
