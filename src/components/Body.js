@@ -6,10 +6,10 @@ const Body = () => {
         <div className = 'bodyContainer'>
             <div className = 'bodyText'>
                 <div>
-                    Food delivered straight to your doorstep
+                    All-purpose goods delivered straight to your doorstep
                 </div>
                 <div>
-                    Get yourself food without leaving your home
+                    Get yourself a <span className = 'redPotion'>red potion</span> without leaving your home
                 </div>
                 <div>
                     Shop Now

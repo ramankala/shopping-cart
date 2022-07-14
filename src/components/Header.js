@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <div className = 'header-ui'>
             <div>
-                ThorEats
+                General Store
             </div>
             <div className = 'header-links'>
                 <ul>

@@ -9,7 +9,7 @@ describe("Header component", () => {
     });
 
     it('renders correct heading', () => {
-        screen.getByText(/thoreats/i);
+        screen.getByText(/general store/i);
     });
 
     it('displays home list item', () => {
