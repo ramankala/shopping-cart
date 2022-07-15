@@ -1,6 +1,9 @@
 .container {
-    height: 800px;
+    height: 100%;
     width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .shopContainer{
     border: blue 2px solid;
@@ -12,18 +15,22 @@
     gap: 20px;
     padding-top: 20px;
     flex: 1;
+    flex-wrap: wrap;
 }
-.foodCard{
+.weaponCard{
     border: red 2px solid;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
+    float: left;
+    object-fit: cover;
 }
 
-.foodCard > img {
+.weaponCard > img {
     width: 150px;
     height: 150px;
+
 }

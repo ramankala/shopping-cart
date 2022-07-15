@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import '../styles/Header.css';
 
 const Header = () => {
@@ -9,14 +11,19 @@ const Header = () => {
             </div>
             <div className = 'header-links'>
                 <ul>
-                    <li>
-                        Home
-                    </li>
 
-                    <li>
-                        Shop
-                    </li>
+                    <Link to='/' >
+                        <li>
+                            Home
+                        </li>
+                    </Link>
 
+                    <Link to='/shop' >
+                        <li>
+                            Shop
+                        </li>
+                    </Link>
+                    
                     <li>
                         <img src = 'https://cdn2.iconfinder.com/data/icons/shopping-139/100/shopping_bag-512.png' /> 
                     </li>

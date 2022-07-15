@@ -6,40 +6,45 @@ import './styles/ShopUI.css';
 
 const Shop = () => { 
 
+    const weapons = [
+        'savage lynel sword',
+        "ancient bow",
+        'frostblade',
+        "radiant shield",
+        'ancient shield',
+        "royal guard's sword",
+        "great eagle bow",
+        'lightscale trident',
+        'edge of duality',
+        'master sword',
+        'ancient battle axe++',
+        'royal claymore'
+    ]
+
     const [items, setItems] = useState([]);
 
     useEffect(() => {
-        fetchFruits();
-    //     setItems([
-    //         {
-    //         fruit: 'Banana',
-    //         price: '3.99',
-    //         imgUrl: 'https://images.immediate.co.uk/production/volatile/sites/30/2017/01/Bananas-218094b-scaled.jpg'
-    //         },
-    //         {
-    //             fruit: 'Mango',
-    //             price: '4.99',
-    //             imgUrl: 'https://upload.wikimedia.org/wikipedia/commons/9/90/Hapus_Mango.jpg'
-    //         },
-    //         {
-    //             fruit: 'Oranges',
-    //             price: '3.50',
-    //             imgUrl: 'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2022%2F01%2F03%2FGettyImages-1205638014-2000.jpg&q=60'
-    //         }
-    // ]);
+        fetchEquipment();
+
     }, []);
 
-    const fetchFruits = async () => {
+    const fetchEquipment = async () => {
         const data = await fetch(
-            'https://botw-compendium.herokuapp.com/api/v2/entry/moblin',
+            'https://botw-compendium.herokuapp.com/api/v2/category/equipment',
             {mode: 'cors'}
         );
 
-        const fruits = await data.json();
-        console.log(fruits);
-        setItems([fruits.data]);
+        const equipment = await data.json();
+        const goods = equipment.data;
+        goods.sort((a, b) => a.name > b.name ? 1 : -1);
+        goods.map((item) => {
+            if (weapons.includes(item.name)){
+                setItems((prevItem) => {
+                    return ([...prevItem, item])
+                });
+            }
+        })
     }
-    
 
     return (
         <div className = 'container'>

@@ -39,7 +39,7 @@ html, body, #root {
     font-size: 24px;
     font-weight: 700;
 }
-.bodyText > div:nth-child(3){
+.shopBtn{
     border:rgb(255, 255, 255) solid  2px;
     color: black;
     background-color: white;
@@ -51,6 +51,7 @@ html, body, #root {
     border-radius: 4px;
     font-weight: 700;
     box-shadow: 2px 2px 2px 2px orange;
+    text-decoration: none;
 }
 .bodyText > div:nth-child(3):hover{
     cursor: pointer;
