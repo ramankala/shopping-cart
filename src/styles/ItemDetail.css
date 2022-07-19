@@ -1,0 +1,72 @@
+@font-face{
+    font-family: 'ZeldaFont';
+    src: url('../fonts/HyliaSerifBeta-Regular.otf');
+}
+
+.itemDetailContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: auto;
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("https://cdn.80.lv/api/upload/content/0d/5d2d6209d85ee.jpg");
+    font-family: 'ZeldaFont';
+}
+.itemDetailContainer > h1 {
+    text-transform: capitalize;
+}
+.itemDetailCard{
+    display: flex;
+    flex: 1 1 auto;
+}
+.itemDetailCard > div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.itemDetailCard > div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex:2;
+    gap: 20px;
+}
+.itemDetailCard > div:nth-child(2) > div:nth-child(1){
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 2;
+}
+.itemDetailCard > div:nth-child(1) > img{
+    height: 400px;
+    width: 400px;
+}
+.itemDetailCard > div:nth-child(1) > ul{
+    font-size: 22px;
+    font-weight: 700;
+    gap: 20px;
+    padding-left: 0;
+}
+.buyBtn{
+    border: 2px solid black;
+    width: 400px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(70, 65, 65);
+    border-radius: 4px;
+}
+.itemDetailCard > div:nth-child(2) > div:nth-child(2) {
+    font-size: 18px;
+    font-weight: 700;
+    
+}

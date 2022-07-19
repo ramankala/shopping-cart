@@ -9,6 +9,7 @@ const ShopUI = (props) => {
         <div className='shopContainer'>
             {items.map((item, index) => {
                 return (
+                <Link to={`/shop/${item.id}`} >
                     <div
                         className = 'weaponCard'
                         key = {index}
@@ -18,12 +19,13 @@ const ShopUI = (props) => {
                         src = {item.image}
                         alt = {item.name}
                         />
-    
-                        <h4>{item.id * 2.5} Rupees</h4>
-                        <Link to={`/shop/${item.id}`} >
-                            <h1>{item.name}</h1>
-                        </Link>
+
+                        <div>
+                            <div>{item.id * 2.5} Rupees</div>
+                            <div>{item.name}</div>
+                        </div>
                     </div>
+                </Link>
                     )
             })}
         </div>

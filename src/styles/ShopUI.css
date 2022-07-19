@@ -1,36 +1,58 @@
+@font-face{
+    font-family: 'ZeldaFont';
+    src: url('../fonts/HyliaSerifBeta-Regular.otf');
+}
+
 .container {
-    height: 100%;
-    width: auto;
+    height: 150%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("https://cdn.80.lv/api/upload/content/0d/5d2d6209d85ee.jpg");
+    font-family: 'ZeldaFont', sans-serif;
 }
 .shopContainer{
-    border: blue 2px solid;
+    /* border: blue 2px solid; */
     height: 100%;
-    width: auto;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 20px;
-    padding-top: 20px;
-    flex: 1;
+    align-content: center;
+    gap: 40px;
     flex-wrap: wrap;
 }
 .weaponCard{
-    border: red 2px solid;
+    /* border: red 2px solid; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 300px;
+    width: 250px;
     height: 300px;
-    float: left;
-    object-fit: cover;
+    padding: 10px;
+    gap: 10px;
 }
 
 .weaponCard > img {
-    width: 150px;
-    height: 150px;
-
+    width: 250px;
+    height: 250px;
+    opacity: 1;
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px 1px rgb(192, 185, 185);
+}
+.weaponCard > div:nth-child(2){
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: flex-start;
+    gap: 5px;
+    text-transform: capitalize;
+}
+.weaponCard > img:hover{
+    opacity: 0.8;
 }
