@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 
 import '../styles/Header.css';
+import logo from '../imgs/2713455.png';
 
 const Header = () => {
 
@@ -10,22 +11,22 @@ const Header = () => {
                 General Store
             </div>
             <div className = 'header-links'>
-                <ul>
+                <ul className = 'links'>
 
-                    <Link to='/' >
+                    <Link className = 'homePg' to='/' >
                         <li>
                             Home
                         </li>
                     </Link>
 
-                    <Link to='/shop' >
+                    <Link className = 'shopPg' to='/shop' >
                         <li>
                             Shop
                         </li>
                     </Link>
                     
-                    <li>
-                        <img src = 'https://cdn2.iconfinder.com/data/icons/shopping-139/100/shopping_bag-512.png' /> 
+                    <li className = 'cartPg'>
+                        <img src = {logo} /> 
                     </li>
                 </ul>
             </div>
