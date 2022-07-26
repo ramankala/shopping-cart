@@ -3,7 +3,9 @@ import { useParams } from 'react-router-dom';
 
 import './styles/ItemDetail.css';
 
-const ItemDetail = () => {
+const ItemDetail = (props) => {
+
+    const { handleCart } = props;
 
     const [items, setItems] =  useState([]);
 
@@ -20,6 +22,8 @@ const ItemDetail = () => {
         console.log(data.data);
         setItems(data.data);
     }  
+
+    
 
     return (
         <div className = 'itemDetailContainer'>
@@ -42,7 +46,7 @@ const ItemDetail = () => {
                 <div>
                     <div>{items.description}</div>
                     <div>{id * 2.5} Rupees</div>
-                    <div className = 'buyBtn'>Add to Cart</div>
+                    <div onClick={() => handleCart(items)} className = 'buyBtn'>Add to Cart</div>
                 </div>
                 
             </div>   

@@ -25,9 +25,11 @@ const Header = () => {
                         </li>
                     </Link>
                     
-                    <li className = 'cartPg'>
-                        <img src = {logo} /> 
-                    </li>
+                    <Link className = 'cartPg' to='/cart'>
+                        <li className = 'cartPg'>
+                            <img src = {logo} /> 
+                        </li>
+                    </Link>
                 </ul>
             </div>
         </div>

@@ -11,7 +11,7 @@
     height: 80%;
     width: auto;
     color: rgb(158, 152, 68);    
-    font-family: 'ZeldaFont';
+    font-family: 'ZeldaFont', sans-serif;
 }
 .itemDetailContainer > h1 {
     text-transform: capitalize;
