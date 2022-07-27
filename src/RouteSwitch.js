@@ -18,7 +18,7 @@ const RouteSwitch = () => {
     };
 
     return (
-        <BrowserRouter basename="">
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Header
             list={list}
              />
