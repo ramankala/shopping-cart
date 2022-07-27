@@ -20,6 +20,9 @@ A challenge I faced on this project was determining how to adjust the quantity o
 - HTML/CSS
 
 ## Live Demo
+To access the app, click on the following link:
+
+https://ramankala.github.io/shopping-cart/
 
 ![shopping-cart-demo](src/imgs/shopping-card-demo.gif)
 # Getting Started with Create React App
