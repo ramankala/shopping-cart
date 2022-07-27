@@ -3,7 +3,10 @@ import { Link } from 'react-router-dom';
 import '../styles/Header.css';
 import logo from '../imgs/2713455.png';
 
-const Header = () => {
+const Header = (props) => {
+
+    const { list } = props;
+
 
     return (
         <div className = 'header-ui'>
@@ -30,6 +33,7 @@ const Header = () => {
                             <img src = {logo} /> 
                         </li>
                     </Link>
+                    <div className = 'amountInCart'>{list.length}</div>
                 </ul>
             </div>
         </div>
