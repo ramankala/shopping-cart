@@ -18,7 +18,7 @@ const RouteSwitch = () => {
     };
 
     return (
-        <BrowserRouter basename="/">
+        <BrowserRouter basename={'/'}>
             <Header
             list={list}
              />
