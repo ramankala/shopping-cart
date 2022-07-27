@@ -1,3 +1,27 @@
+# Shopping Cart Demo
+
+## Brief Introduction
+
+Shopping cart demo using Hyrule Compendium API to fetch shop items and populate the shopping cart demo.  Users are able to select weapons and shields, choose how many of each items they wish, and place them in their shopping cart where they can purchase the goods.
+
+## Skills Demonstrated
+
+The entire project uses functional components in React, and an emphasis was placed on compartmentalizing components, attaining a modular approach.  Jest was used to test the UI of the project as well.
+
+## Challenges Faced
+
+A challenge I faced on this project was determining how to adjust the quantity of singular items without affecting other items in the array.  After going back and forth on the code and how I wanted to implement it, a solution came to me when I added a quantity property to the data brought in by the API.  I then toggled that object property as a way to toggle the quantity of items without affecting other items in the array.
+## Technologies Used
+- React
+- Hyrule Compendium API
+- Jest
+- Webpack
+- Javascript
+- HTML/CSS
+
+## Live Demo
+
+![shopping-cart-demo](src/imgs/shopping-card-demo.gif)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

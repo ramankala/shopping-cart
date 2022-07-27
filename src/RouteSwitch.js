@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Home from './Home';
 import Shop from './Shop';
 import ItemDetail from './ItemDetail';
@@ -16,10 +16,6 @@ const RouteSwitch = () => {
         setList((prevItem) => [...prevItem, item]);
         setCount((prevCount) => prevCount + (item.id * 2.5 * item.quantity));
     };
-
-    useEffect(() => {
-        console.log(list);
-    },[list]);
 
     return (
         <BrowserRouter>
@@ -44,4 +40,3 @@ const RouteSwitch = () => {
 
 export default RouteSwitch;
 
-//Route paths to the Home page and Shop page, not App.js

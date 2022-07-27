@@ -19,7 +19,6 @@ const ItemDetail = (props) => {
         const fetchItem = await fetch(`https://botw-compendium.herokuapp.com/api/v2/entry/${id}`, { mode: 'cors' });
         const data = await fetchItem.json();
         data.data.quantity = 1;
-        console.log(data.data);
         setItems(data.data);
     }  
 

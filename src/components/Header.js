@@ -7,11 +7,10 @@ const Header = (props) => {
 
     const { list } = props;
 
-
     return (
         <div className = 'header-ui'>
             <div>
-                General Store
+                Breath of Wild Store
             </div>
             <div className = 'header-links'>
                 <ul className = 'links'>
@@ -33,7 +32,7 @@ const Header = (props) => {
                             <img src = {logo} /> 
                         </li>
                     </Link>
-                    <div className = 'amountInCart'>{list.length}</div>
+                    <div className = 'amountInCart'>{list.reduce((prev, curr) => prev + curr.quantity, 0)}</div>
                 </ul>
             </div>
         </div>

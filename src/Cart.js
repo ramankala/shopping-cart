@@ -1,16 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 import './styles/Cart.css';
 
 const Cart = (props) => {
 
     const { count, list } = props; 
-
-    useEffect(() => {
-
-        console.log(list);
-
-    },[]);
     return(
         <div className = 'checkoutTable'>
             <div>
