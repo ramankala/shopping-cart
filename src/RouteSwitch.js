@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import React, { useState } from 'react';
 import Home from './Home';
 import Shop from './Shop';
@@ -18,7 +18,7 @@ const RouteSwitch = () => {
     };
 
     return (
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <HashRouter>
             <Header
             list={list}
              />
@@ -34,7 +34,7 @@ const RouteSwitch = () => {
                             />
                     } />
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 
