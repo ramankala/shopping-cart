@@ -18,12 +18,28 @@ const ItemDetail = (props) => {
     const fetchItem = async () => {
         const fetchItem = await fetch(`https://botw-compendium.herokuapp.com/api/v2/entry/${id}`, { mode: 'cors' });
         const data = await fetchItem.json();
-
+        data.data.quantity = 1;
         console.log(data.data);
         setItems(data.data);
     }  
 
-    
+    const handleIncrement = () => {
+        setItems(prevState => {
+            return {
+                ...prevState,
+                quantity: prevState.quantity + 1,
+            }
+        });
+    }
+
+    const handleDecrement = () => {
+        setItems(prevState => {
+            return {
+                ...prevState,
+                quantity: prevState.quantity - 1 || 1
+            }
+        });
+    }
 
     return (
         <div className = 'itemDetailContainer'>
@@ -45,7 +61,13 @@ const ItemDetail = (props) => {
                 </div>
                 <div>
                     <div>{items.description}</div>
-                    <div>{id * 2.5} Rupees</div>
+                    <div>{id * 2.5 * items.quantity} Rupees</div>
+                    <div className = 'itemQuantity'>
+                        <div onClick={handleDecrement} className = 'decrement'>-</div>
+                        <div>{items.quantity}</div>
+                        <div onClick={handleIncrement} className = 'increment'>+</div>
+                    </div>
+
                     <div onClick={() => handleCart(items)} className = 'buyBtn'>Add to Cart</div>
                 </div>
                 

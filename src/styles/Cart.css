@@ -71,3 +71,20 @@
     padding-left: 10px;
     text-transform: capitalize;
 }
+
+.checkOutBtn {
+    border: 2px solid rgb(70, 65, 65);
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(70, 65, 65);
+    background-color: rgb(158, 152, 68);
+    border-radius: 6px;
+    margin-top: 20px;
+}
+.checkOutBtn:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}

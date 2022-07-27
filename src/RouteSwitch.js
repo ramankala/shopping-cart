@@ -14,7 +14,7 @@ const RouteSwitch = () => {
 
     const handleCart = (item) => {
         setList((prevItem) => [...prevItem, item]);
-        setCount((prevCount) => prevCount + (item.id * 2.5));
+        setCount((prevCount) => prevCount + (item.id * 2.5 * item.quantity));
     };
 
     useEffect(() => {
@@ -32,7 +32,7 @@ const RouteSwitch = () => {
                      path = "/cart" element = { 
                         <Cart
                          list={list}
-                         count={count}
+                         count={count}   
                             />
                     } />
             </Routes>

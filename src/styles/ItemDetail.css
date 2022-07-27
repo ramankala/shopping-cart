@@ -70,12 +70,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(158, 152, 68);;
+    color: rgb(158, 152, 68);
     background-color: rgb(70, 65, 65);
     border-radius: 4px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.buyBtn:hover{
+    cursor: pointer;
+    opacity: 0.9;
 }
 .itemDetailCard > div:nth-child(2) > div:nth-child(2) {
     font-size: 24px;
     font-weight: 700;
     padding-top: 50px;
+}
+.itemQuantity{
+    display: flex;
+    gap: 25px;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.decrement:hover,.increment:hover{
+    cursor: pointer;
 }
