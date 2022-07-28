@@ -18,12 +18,12 @@ const RouteSwitch = () => {
     };
 
     return (
-        <HashRouter basename="/">
+        <HashRouter>
             <Header
             list={list}
              />
             <Routes>
-                <Route exact path = "/" element = { <Home /> } />
+                <Route path = "/" element = { <Home /> } />
                 <Route path = "/shop" element = { <Shop /> } />
                 <Route path = "/shop/:id" element = { <ItemDetail handleCart = {handleCart}/> } />
                 <Route
