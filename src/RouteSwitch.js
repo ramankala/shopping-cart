@@ -5,6 +5,7 @@ import Shop from './Shop';
 import ItemDetail from './ItemDetail';
 import Header from './components/Header';
 import Cart from './Cart';
+import CheckOut from './components/CheckOut';
 
 
 const RouteSwitch = () => {
@@ -33,6 +34,7 @@ const RouteSwitch = () => {
                          count={count}   
                             />
                     } />
+                <Route path = "/cart/checkOut" element = { <CheckOut /> } />
             </Routes>
         </HashRouter>
     )

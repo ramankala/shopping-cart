@@ -1,10 +1,12 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './styles/Cart.css';
 
 const Cart = (props) => {
 
-    const { count, list } = props; 
+    const { count, list } = props;
+
     return(
         <div className = 'checkoutTable'>
             <div>
@@ -30,7 +32,9 @@ const Cart = (props) => {
             <div className = 'totalCount'> 
                 <div>Total:</div><div>{count} Rupees</div>
             </div>
-            <div className = 'checkOutBtn'>CHECKOUT</div>
+            <Link to={'/cart/checkOut'}>
+                <div className = 'checkOutBtn'>CHECKOUT</div>
+            </Link>
         </div>
     )
 }

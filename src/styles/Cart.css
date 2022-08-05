@@ -88,3 +88,6 @@
     cursor: pointer;
     opacity: 0.9;
 }
+.checkoutTable > a {
+    text-decoration: none;
+}
